@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.customview.MainActivity">
+
+    <!--<com.example.customview.CalendarView
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:layout_height="500dp"
+        app:month="9"
+        app:day="11"
+        app:titleSize="18sp"
+        app:year="2018"/>-->
+
+    <!--<RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/filterselector"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/text_color"
+            android:text="test1"/>
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/filterselector"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/text_color"
+            android:text="test2"/>
+    </RadioGroup>-->
+    <com.example.customview.SideView
+        android:id="@+id/sideView"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        app:text_color="@color/blue"
+        app:dialog_width="120dp"
+        app:dialog_height="120dp"
+        app:backgroundColor="@color/background"
+        app:dialog_background="@color/side_view_dialog_background"
+        android:orientation="horizontal"
+        android:layout_height="800dp">
+
+        <ListView
+            android:id="@+id/listView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.example.customview.SideView>
+    <!--<com.example.customview.MyView
+        android:layout_width="800dp"
+        android:background="#FF0000"
+        android:layout_height="800dp" >
+        <com.example.customview.MyView1
+            android:layout_width="400dp"
+            android:background="#FF00FF"
+            android:layout_height="400dp" />
+
+    </com.example.customview.MyView>-->
+</LinearLayout>
